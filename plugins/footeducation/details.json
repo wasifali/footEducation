@@ -1,0 +1,36 @@
+{
+    "uid": "footeducation",
+    "name": "footeducation Theme",
+    "description": "A theme for footeducation site.",
+    "version": "0.2.0",
+    "pb_version": "0.8.0",
+    "author": {
+        "name": "footeducation",
+        "email": "yasir.rafiq@novatoresols.com",
+        "website": "http://footeducation.com",
+        "contributors": [
+            {
+                "name": "Yasir Rafiq",
+                "email": ""
+            },
+            {
+                "name": "Talha Awan",
+                "email": ""
+            }
+        ]
+    },
+    "settings": [],
+    "permissions": {
+        "ACCESS_USER": [],
+        "ACCESS_WRITER": [],
+        "ACCESS_EDITOR": [],
+        "ACCESS_MANAGING_EDITOR": []
+    },
+    "main_module": {
+        "path": "footeducation.js"
+    },
+    "theme": {
+        "settings": [],
+        "content_templates": []
+    }
+}

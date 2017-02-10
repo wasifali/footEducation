@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="pencilblueApp">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>^page_name^</title>
+    <meta name="description" content="^meta_desc^">
+    <meta property="og:locale" content="^meta_lang^"/>
+    <meta property="og:title" content="^meta_title^"/>
+    <meta property="og:description" content="^meta_desc^"/>
+    <meta property="og:url" content="^site_root^^current_url^"/>
+    <meta property="og:image" content="^meta_thumbnail^">
+    <meta property="og:site_name" content="^site_name^"/>
+    <meta property="og:type" content="article"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <link rel="shortcut icon" href="^site_icon^">
+
+    <link rel="stylesheet" type="text/css" href="^bootstrap_css_src^">
+    <link rel="stylesheet" type="text/css" href="^font_awesome_src^">
+    <link rel="stylesheet" type="text/css" href="/public/footeducation/css/footeducation_theme.css">
+    <link rel="stylesheet" type="text/css" href="/public/footeducation/css/fpi_page.css">
+
+
+    <script type="text/javascript" src="^jquery_src^"></script>
+    <script type="text/javascript" src="^bootstrap_js_src^"></script>
+    <script type="text/javascript" src="^angular_src^"></script>
+    <script type="text/javascript" src="^angular_route_src^"></script>
+    <script type="text/javascript" src="^angular_sanitize_src^"></script>
+    <script type="text/javascript" src="/js/media.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="http://www.footeducation.com/javascripts/fpi.js"></script>
+    <script type="text/javascript" src="http://www.footeducation.com/javascripts/jquery.maphilight.min.js"></script>
+
+
+<!--     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ -->
+    <script>
+
+        $( document ).ready(function(){
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+        })
+
+    </script>
+
+    ^localization_script^
+    ^analytics^
+</head>
+<body ng-controller="PencilBlueController">
+<div>
+    <a id="navbar_brand"  href="/" style="padding: 3.4em">
+        <img src="^site_logo^" class="footeducation-logo" />
+    </a>
+</div>
+
+<div class="footeducation-body">
+    <div id="wrap" class="footeducation-menu">
+        ^tmp_elements=top_menu^
+    </div>

@@ -1,0 +1,231 @@
+
+/*foot pain identifier start*/
+#foot-pain-identifier {
+    width:680px;
+    height:520px;
+    overflow:hidden;
+    background-color:#DDDFDE;
+    position:relative;
+    display:none;
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
+
+#backToTop {
+    display:none;
+}
+
+#fpi-header {
+    width:640px;
+    height:73px;
+    position:absolute;
+    top:12px;
+    left:19px;
+    background-image:url('/public/footeducation/img/fpi-header.png');
+    background-repeat:no-repeat;
+}
+
+#fpi-buttons {
+    position:absolute;
+    top:155px;
+    left:100px;
+}
+
+#fpi-buttons a{
+    float:left;
+    margin-right:20px;
+}
+
+a#dorsal-button {
+    background-image:url('/public/footeducation/img/fpi-buttons.png');
+    background-position:0 0;
+    background-repeat:no-repeat;
+    width:104px;
+    height:104px;
+    display:block;
+}
+
+a:hover#dorsal-button {
+    background-position:0 -104px;
+}
+
+a#plantar-button {
+    background-image:url('/public/footeducation/img/fpi-buttons.png');
+    background-position:-104px 0;
+    background-repeat:no-repeat;
+    width:104px;
+    height:104px;
+    display:block;
+}
+
+a:hover#plantar-button {
+    background-position:-104px -104px;
+}
+
+a#lateral-button {
+    background-image:url('/public/footeducation/img/fpi-buttons.png');
+    background-position:-208px 0;
+    background-repeat:no-repeat;
+    width:104px;
+    height:104px;
+    display:block;
+}
+
+a:hover#lateral-button {
+    background-position:-208px -104px;
+}
+
+a#medial-button {
+    background-image:url('/public/footeducation/img/fpi-buttons.png');
+    background-position:-312px 0;
+    background-repeat:no-repeat;
+    width:104px;
+    height:104px;
+    display:block;
+}
+
+a:hover#medial-button {
+    background-position:-312px -104px;
+}
+
+#fpi-feet {
+    position:absolute;
+    top:90px;
+    left:9px;
+}
+
+#dorsal-image {
+    position:absolute;
+    top:0;
+    left:136px;
+}
+
+#plantar-image {
+    position:absolute;
+    top:10px;
+    left:104px;
+}
+
+#medial-image {
+    position:absolute;
+    top:93px;
+    left:0;
+}
+
+#lateral-image {
+    position:absolute;
+    top:93px;
+    left:0px;
+}
+
+#fpi-links {
+    width:260px;
+    position:absolute;
+    top:100px;
+    left:394px;
+}
+
+#fpi-buttons-small {
+    position:absolute;
+    top:449px;
+    left:463px;
+}
+
+#fpi-buttons-small a{
+    float:left;
+    margin-right:10px;
+}
+
+a#dorsal-button-small {
+    background-image:url('/public/footeducation/img/fpi-buttons-small.png');
+    background-position:0 0;
+    background-repeat:no-repeat;
+    width:43px;
+    height:43px;
+    display:block;
+}
+
+a:hover#dorsal-button-small {
+    background-position:0 -43px;
+}
+
+a#plantar-button-small {
+    background-image:url('/public/footeducation/img/fpi-buttons-small.png');
+    background-position:-43px 0;
+    background-repeat:no-repeat;
+    width:43px;
+    height:43px;
+    display:block;
+}
+
+a:hover#plantar-button-small {
+    background-position:-43px -43px;
+}
+
+a#lateral-button-small {
+    background-image:url('/public/footeducation/img/fpi-buttons-small.png');
+    background-position:-86px 0;
+    background-repeat:no-repeat;
+    width:43px;
+    height:43px;
+    display:block;
+}
+
+a:hover#lateral-button-small {
+    background-position:-86px -43px;
+}
+
+a#medial-button-small {
+    background-image:url('/public/footeducation/img/fpi-buttons-small.png');
+    background-position:-129px 0;
+    background-repeat:no-repeat;
+    width:43px;
+    height:43px;
+    display:block;
+}
+
+a:hover#medial-button-small {
+    background-position:-129px -43px;
+}
+
+#fpi-footer {
+    position:absolute;
+    bottom:5px;
+    right:10px;
+}
+
+#fpi-footer p {
+    font-size:12px;
+    margin:0;
+    padding:0;
+    color:gray;
+    cursor:default;
+}
+
+#foot-pain-identifier  p{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    font-style:italic;
+}
+
+#foot-pain-identifier  ul{
+    margin:0;
+    padding:0;
+    z-index:999;
+    list-style:none;
+}
+
+#foot-pain-identifier  li{
+    margin:0;
+    padding:0;
+}
+
+#foot-pain-identifier .fpi-chronic, #foot-pain-identifier .fpi-acute {
+    font-weight:bold;
+    font-size:14px;
+    padding-top:10px;
+}
+
+
+
