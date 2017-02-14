@@ -67,11 +67,24 @@ module.exports = function RequestHandlerModule(pb) {
          * @type {Response}
          */
         this.resp = resp;
-
+        var url_split = req.url.split('/');
+        var public_dir = ['js', 'css', 'fonts', 'img', 'localization', 'favicon.ico', 'docs', 'bower_components','api', 'public', 'actions'];
+    
+        if( req.url.length > 1 && url_split[1] !== 'page' && url_split[1] !== 'admin' && public_dir.indexOf(url_split[1]) === -1 ){
+            // req.url = '/page/'+url_split[url_split.length - 1];
+            
+                console.log(req.url);
+                setTimeout(function(){
+console.log("in here");
+                }, 4000)
+            return this.doRedirect('/page/'+url_split[url_split.length - 1], 301);
+        }
         /**
          * @property url
          * @type {Url}
          */
+
+        
         this.url       = url.parse(req.url, true);
 
         /**
@@ -809,6 +822,7 @@ module.exports = function RequestHandlerModule(pb) {
      * @param {Object} session The session for the requesting entity
      */
     RequestHandler.prototype.onSessionRetrieved = function(err, session) {
+        console.log("in session");
         if (err) {
             this.onErrorOccurred(err);
             return;
@@ -1049,6 +1063,7 @@ module.exports = function RequestHandlerModule(pb) {
             var inactiveSiteAccess = route.themes[rt.site][rt.theme][rt.method].inactive_site_access;
             if (!self.siteObj.active && !inactiveSiteAccess) {
                 if (self.siteObj.uid === pb.SiteService.GLOBAL_SITE) {
+                    console.log("call doRedirect");
                     return self.doRedirect('/admin');
                 }
                 else {
@@ -1474,6 +1489,7 @@ module.exports = function RequestHandlerModule(pb) {
      * @param {Integer} [statusCode=302]
      */
     RequestHandler.prototype.doRedirect = function(location, statusCode) {
+        console.log("In doRedirect");
         this.resp.statusCode = statusCode || pb.HttpStatus.MOVED_TEMPORARILY;
         this.resp.setHeader("Location", location);
         this.resp.end();
