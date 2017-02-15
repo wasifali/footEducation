@@ -434,7 +434,7 @@ module.exports = function fpiModule(pb) {
         var routes = [
             {
                 method: 'get',
-                path: '/p/foot-pain-identifier',
+                path: '/page/foot-pain-identifier',
                 auth_required: false,
                 content_type: 'text/html'
             }

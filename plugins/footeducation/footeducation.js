@@ -1,6 +1,5 @@
 
 module.exports = function FootEducationModule(pb) {
-
     /**
      * FootEducation - A FootEducation site theme for PencilBlue
      *
